@@ -130,7 +130,7 @@ while($row=mysqli_fetch_assoc($sql)){
 		<p id="welcome-text"><?php echo $row['Intro'];?></p><hr id="line">
 		<h1><?php echo $row['Title'];?></h1>
 		<p id="text-area">O<?php echo $row['Caption'];?></p>
-		<a data-scroll href="#services" class="btn btn-transparent">What we offer</a>
+		<a data-scroll href="#services" class="btn btn-transparent">What we offer!</a>
 	</div>
 </section>
  <?php
