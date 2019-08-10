@@ -2,23 +2,6 @@ $(document).ready(function(){
 	//
 	
 	var param="";
-	// On the skill form
-
-	$('#add-name').click(function(){
-		$('#new_form').load('../views/dynamic_blocks.php #new_name', param);
-		$('#new_form').show();
-		$(this).hide('slow');
-		$('#tab div').hide('slow');
-		$('#back a').css('display','block');
-		
-	});
-
-	$('#back').on('click', function(){
-			$('#back a').css('display','none');
-			$('#new_form').html("");
-			$('#add-name').show('fast');
-			$('#tab div').show('fast');
-		});
 
 	// On the Intro form
 
@@ -116,8 +99,8 @@ $(document).ready(function(){
 
 	// On the story form
 
-	$('#new-story').click(function(){
-		$('#new_form').load('../views/dynamic_blocks.php #new_story', param);
+	$('#add-story').click(function(){
+		$('#new_form').load('views/dynamic.php #new_story', param);
 		$('#new_form').show();
 		$(this).hide('slow');
 		$('#tab div').hide('slow');
@@ -130,8 +113,23 @@ $(document).ready(function(){
 			$('#new_form').html("");
 			$('#new-story').show('fast');
 			$('#tab div').show('fast');
-		});
-  
+		});	
 
-	
+		 // On the skill form
+
+	$('#add-skill').click(function(){
+		$('#new_form').load('views/dynamic.php #new_skill', param);
+		$('#new_form').show();
+		$(this).hide('slow');
+		$('#tab div').hide('slow');
+		$('#back a').css('display','block');
+		
+	});
+
+	$('#back').on('click', function(){
+			$('#back a').css('display','none');
+			$('#new_form').html("");
+			$('#add-skill').show('fast');
+			$('#tab div').show('fast');
+		});
 });

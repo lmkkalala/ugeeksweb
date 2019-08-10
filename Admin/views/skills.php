@@ -18,8 +18,8 @@ include 'include/db_connect.php';
           
         </div></center>
          <!-- End Message after operations -->
-    <div id="new-btn" style="margin-left: 6%; margin-top: 2%;">
-      <a id="add-name" style="width: 10%;" class="btn btn-default fa fa-plus" name="" value="New"> New</a>
+     <div id="new-btn" style="margin-left: 6%; margin-top: 2%;">
+      <a id="add-skill" style="width: 10%;" class="btn btn-default fa fa-plus" name="" value="New"> New</a>
     </div>
     <!-- New Intro form -->
     <div id="new_form">

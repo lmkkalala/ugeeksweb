@@ -93,13 +93,11 @@
               </div>
               <!-- /. tools -->
             </div>
-            <?php
-            $sql=msyqli_query($connect,"SELECT * FROM messages");
-            ?>
+            
             <div class="box-body">
               <form action="#" method="post">
                 <div class="form-group">
-                  <input type="email" class="form-control" name="emailto" placeholder="Email to:" value="<?php echo ?>">
+                  <input type="email" class="form-control" name="emailto" placeholder="Email to:" value="<?php ?>">
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control" name="subject" placeholder="Subject">
